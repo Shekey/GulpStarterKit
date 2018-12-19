@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
+<body>
 	<header>
-		<a id="logo">Hello World.</a>
+		<div class="overlay"></div>
+		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+			<source src="aldi.mp4"" type="video/mp4">
+		</video>
+		<div class="container h-100">
+			<div class="d-flex text-center h-100">
+				<div class="my-auto w-100 text-white">
+					<!-- <h1 class="display-3">Aldi</h1>
+					<h2>Caffe Slastičarna</h2> -->
+				</div>
+			</div>
+		</div>
 	</header>
 
-	<main>
-		<h1>Simple Gulp with SASS template</h1>
-		<p>This is a very simple document startup template. We have gulp with sass set up. We also have autoprefixer and browserSync installed. There are no unnecessary packages and no meddling with your JS or images.</p>
+	<section class="my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 mx-auto">
+					<p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background!
+						The header text is vertically centered using flex utilities that are build into Bootstrap 4.</p>
+					<p>The overlay color can be changed by changing the <code>background-color</code> of the <code>.overlay</code>
+						class in the CSS.</p>
+					<p>Set the mobile fallback image in the CSS by changing the background image of the header element within the
+						media query at the bottom of the CSS snippet.</p>
+					<p class="mb-0">
+						Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-		<h2>Usage</h2>
-		<p>The usage is fairly simple. `npm install` and later `gulp watch`.<br>You'll get the hang of it. ;)</p>
 
-		<h2>SASS Compiling Rules</h2>
-		<p>All compiled files will compile within the app/css directory, under the same filename. For example the default files will compile as app/css/style.css and app/css/print.css.</p>
+	<footer>
+		<div class="footer-social-icons">
+			<h4 class="_14">Follow us on</h4>
+			<ul class="social-icons">
+				<li><a href="" class="social-icon"> <i class="fa fa-facebook"></i>Aldi Group #1 Mostar</a></li>
+				<li><a href="" class="social-icon"> <i class="fa fa-facebook"></i>Aldi Group #2 Široki Brijeg</a></li>
+				<li><a href="" class="social-icon"> <i class="fa fa-instagram"></i>Aldi Group </a></li>
+			</ul>
+		</div>
 
-		<h2>JS Compiling Rules</h2>
-		<p>All js files are split into two directories: domain - which contains your scripts, and vendor, which contains vendor scripts.</p>
-
-		<h2>Terms that apply</h2>
-		<ol>
-			<li>- All other files including JS and HTML are free to stay in the app folder.</li>
-			<li>- Generally, you will upload only the contents of the "app" folder to the server.</li>
-			<li>- Autoprefixer adds browser prefixes only after compiling success of SCSS.</li>
-			<li>- .gitignore is set up for OSX, Windows and Node.</li>
-			<li>- On every save of every file, browser will be refreshed.</li>
-			<li>- There are limits as we watch only for HTML, JS and SCSS files for reload.</li>
-			<li>- Manual page reload is needed for images directories and other.</li>
-		</ol>
-	</main>
-
-	<footer>Copyright &copy; 2015 Marko Mitranić</footer>
+	</footer>
 
 	<script type="text/javascript" src="scripts/vendor.js"></script>
 	<script type="text/javascript" src="scripts/scripts.min.js"></script>
 </body>
+
 </html>

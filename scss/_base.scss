@@ -1,0 +1,32 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #FFF;
+  background: #322f30;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p > a:hover {
+  color: #d9d9d9;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1% 0 1% 0;
+}
+
+
+// Global Variables
+$black: #3d3d3d;
+$white: #ededed;
+$light-blue: #6fbfe8;
+$accent-orange: #d6751b;
