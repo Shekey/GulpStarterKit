@@ -28,7 +28,7 @@ footer {
   .footer-social-icons {
 	width: 100%;
 	display: block;
-	margin: 0 auto 40px;
+  margin: 15px auto 40px;
   
     @media only screen and (min-width : 320px) and (max-width : 768px){
       width: 100%;
@@ -44,16 +44,17 @@ footer {
   }
   
   .social-icons {
+  margin-top: 15px;
   text-align: center;
   font-size: 0;
   display: flex;
-  flex: 1;
   justify-content: center;
 
   li {
     text-align: center;
     width: 100%;
     vertical-align: top;
+    flex-basis: 10%;
     
     &:hover {
     background-color: rgb(185, 31, 95);
