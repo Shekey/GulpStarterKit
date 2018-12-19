@@ -2,3 +2,37 @@ main {
 	max-width: 650px;
 	margin: 80px auto 0 auto;
 }
+
+.about-us {
+	text-align: center;
+	.headline-about {
+		font-family: 'Dancing Script', cursive;
+		font-size: 70px;
+		margin-bottom: 20px;
+	}
+
+	.text-about {
+		font-family: 'Merienda+One', cursive;
+		font-size: 22px;
+		margin-bottom: 15px;
+		text-align: left;
+
+		&:first-of-type{
+			&::first-letter {
+				font-size: 52px;
+				letter-spacing: 8px;
+			}
+		}
+
+		&:last-of-type {
+			margin-bottom: 40px;
+		}
+
+		span {
+			&::before {
+				content: "\A";
+				white-space: pre;
+			}
+		}
+	}
+}
