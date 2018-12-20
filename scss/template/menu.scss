@@ -1,0 +1,24 @@
+.menu-section {
+  background: #fff;
+  min-height: 500px;
+  text-align: center;
+
+	.headline-menu {
+		font-family: 'Dancing Script', cursive;
+		font-size: 70px;
+    margin-bottom: 20px;
+    color: #322f30;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 200px;
+      height: 5px;
+      transform: translateX(-50%);
+  	  border-bottom: 5px solid rgb(185, 31, 95);
+    }
+	}
+}
