@@ -2,6 +2,28 @@ main {
 	max-width: 650px;
 	margin: 80px auto 0 auto;
 }
+.objects {
+	padding: 50px 0 100px;
+	background: #fff;
+
+	.headline-objects {
+		color: #322f30;
+		font-family: 'Dancing Script', cursive;
+		font-size: 70px;
+		margin-bottom: 40px;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 200px;
+			height: 5px;
+			transform: translateX(-50%);
+			  border-bottom: 5px solid rgb(185, 31, 95);
+		  }
+	} 
+}
 
 .about-us {
 	text-align: center;
@@ -20,7 +42,7 @@ main {
 			transform: translateX(-50%);
 			  border-bottom: 5px solid rgb(185, 31, 95);
 		  }
-	}
+	} 
 
 	.text-about {
 		font-family: 'Merienda+One', cursive;
