@@ -6,7 +6,7 @@
 body {
   font-family: 'Lato', sans-serif;
   color: #FFF;
-  background: #322f30;
+  background: $bg-color;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 // Global Variables
-$black: #3d3d3d;
+$bg-color: #3d3d3d;
 $white: #ededed;
-$light-blue: #6fbfe8;
+$border-color: #6fbfe8;
 $accent-orange: #d6751b;
