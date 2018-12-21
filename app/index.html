@@ -75,9 +75,10 @@
 			width: 80%;
 			max-width: 700px;
 			text-align: center;
-			color: #ccc;
+			color: #fff;
 			padding: 10px 0;
 			height: 150px;
+			font-size: 24px;
 		}
 
 		/* Add Animation */
@@ -322,15 +323,15 @@
 		<div id="myModal" class="modal">
 			<span class="close">&times;</span>
 			<img class="modal-content" id="img01" src="../assets/kolac-1.jpg">
-			<!-- <div id="caption"></div> -->
+			<div id="caption"></div>
 		</div>
 	</section>
 
 	<footer>
 		<div class="container">
 			<div class="footer-social-icons">
-				<div class="row">
-					<div class="col-md-6 col-sm-12">
+				<div class="row justify-content-center">
+					<div class="col-md-4 col-sm-12">
 						<h4 class="_14 text-center">Aldi Group #1</h4>
 						<ul class="social-icons">
 							<li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
@@ -339,7 +340,7 @@
 							</i>
 						</ul>
 					</div>
-					<div class="col-md-6 col-sm-12">
+					<div class="col-md-4 col-sm-12">
 						<h4 class="_14 text-center">Aldi Group #2</h4>
 						<ul class="social-icons">
 							<li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
@@ -361,15 +362,16 @@
 	<script>
 		// Get the modal
 		var modals = document.querySelectorAll('.card-img-top');
-		console.log(modals);
 		var modalImg = document.getElementById("img01");
 		var myModal = document.getElementById("myModal");
-		console.log(modalImg.src);
+		var caption = document.getElementById("caption");
 
 		modals.forEach(element => {
 			element.addEventListener("click", function () {
-				console.log(element.src);
+				var body = element.nextElementSibling;
+				var title = body.querySelector(".card-title").innerHTML;
 				modalImg.src = element.src;
+				caption.innerText = title;
 				myModal.style.display = "block";
 			})
 		});
