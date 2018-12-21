@@ -2,11 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Merienda+One');
+// Global Variables
+$bg-color: #3d3d3d;
+$white: #ededed;
+$border-color: #6fbfe8;
+$accent-orange: #d6751b;
 
 body {
   font-family: 'Lato', sans-serif;
-  color: #FFF;
-  background: $bg-color;
+  color: #3d3d3d;
+  background: #fff;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -26,8 +31,3 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-// Global Variables
-$bg-color: #3d3d3d;
-$white: #ededed;
-$border-color: #6fbfe8;
-$accent-orange: #d6751b;

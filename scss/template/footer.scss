@@ -1,11 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Lato';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css';
 footer {
-  @extend .container;
 	display: block;
 	min-height: 20px;
-	background-color: #322f30;
-	color: $white;
+	background-color: $bg-color;
+  color: $white;
+  padding: 15px 0 10px;
 	// border-top: 5px solid rgb(185, 31, 95);
 }
 

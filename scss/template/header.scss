@@ -1,3 +1,29 @@
+.page-header {
+  font-family: 'Dancing Script', cursive;
+  padding: 15px 0 30px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 300px;
+    height: 5px;
+    transform: translateX(-50%);
+    border-bottom: 5px solid rgb(185, 31, 95);
+
+    @media only screen and (min-width : 320px) and (max-width : 768px){
+      bottom: 20px;
+    }
+  }
+  h1 {
+    @media only screen and (min-width : 320px) and (max-width : 768px){
+      font-size: 40px;
+    }
+  }
+}
+
 header {
 	position: relative;
 	background-color: black;
