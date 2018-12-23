@@ -250,15 +250,14 @@ h3 {
 	} 
 
 	.text-about {
-		font-family: 'Merienda+One', cursive;
-		font-size: 22px;
+		font-family: 'Caveat', cursive;
+		font-size: 30px;
 		margin-bottom: 15px;
 		text-align: left;
 
 		&:first-of-type{
 			&::first-letter {
 				font-size: 52px;
-				letter-spacing: 8px;
 			}
 		}
 
