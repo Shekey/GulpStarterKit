@@ -15,6 +15,10 @@ body {
   background: #fff;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+
+  &.modal-open {
+    overflow-y: hidden;
+  }
 }
 
 a {

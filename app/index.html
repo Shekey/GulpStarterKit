@@ -22,7 +22,7 @@
 	</div>
 	<header>
 		<div class="overlay"></div>
-		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="false">
+		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="false" poster="../assets/poster-welcome.jpg">
 			<source src="aldi.mp4"" type=" video/mp4"> </video> <div class="container h-100">
 			<div class="d-flex text-center h-100">
 				<div class="my-auto w-100 text-white">
@@ -85,7 +85,7 @@
 			<h2 class="headline-objects text-center">Galerija</h2>
 			<div class="video-wrap">
 				<p># Caffe slastičarna Aldi2 - <span>Promo video #</span></p>
-				<video width="100%" height="auto" border="5" controls="controls" style="position:relative; z-index: 1;">
+				<video width="100%" height="auto" poster="../assets/poster-welcome.jpg" border="5" controls="controls" style="position:relative; z-index: 1;">
 					<source src="../assets/aldi2.mp4" type="video/mp4">
 				</video>
 			</div>
@@ -835,6 +835,55 @@
 						</div>
 					</div>
 				</article>
+
+				<div class="category-tag" id="kolaci">#Bruschette</div>
+				<article class="no-image justify-content-center">
+					<div class="card">
+						<img class="card-img-top" src="../assets/brusketi.jpg" alt="Card image cap">
+					</div>
+					<div class="menu-wrap">
+							<div class="text text-center mb-2">Vrste bruschette:</div>
+
+						<div class="menu-item">
+							<div class="text"><span class="badge badge-secondary">1</span>Bruschette - Panceta</div>
+							<div class="desc">(piletina - gljive)</div>							
+						</div>
+
+						<div class="menu-item">
+							<div class="text"><span class="badge badge-secondary">2</span>Bruschette - tunjevina </div>
+							<div class="desc">(pršut - sir)</div>							
+						</div>
+
+						<div class="menu-item">
+							<div class="text"><span class="badge badge-secondary">3</span>Bruschette - Mozzarela</div>
+							<div class="desc">(sir, bijeli umak, piletina, gljive)</div>
+						</div>
+
+						<div class="menu-item">
+							<div class="text"><span class="badge badge-secondary">4</span>Bruschette - Origano</div>
+							<div class="desc">(sir, bijeli umak, piletina, gljive)</div>
+						</div>
+
+						<div class="menu-item">
+							<div class="text"><span class="badge badge-secondary">5</span>Bruschette - Naturale</div>
+							<div class="desc">(sir, bijeli umak, piletina, gljive)</div>
+						</div>
+
+						
+						<div class="menu-item">
+							<div class="text"><span class="badge badge-secondary">6</span>Bruschette - Marinare</div>
+							<div class="desc">(sir, bijeli umak, piletina, gljive)</div>
+						</div>
+
+						
+						<div class="menu-item">
+							<div class="text"><span class="badge badge-secondary">7</span>Bruschette - Cappriccosa</div>
+							<div class="desc">(sir, bijeli umak, piletina, gljive)</div>
+						</div>
+					</div>
+				</article>
+
+				
 			</div>
 	</section>
 
@@ -855,7 +904,8 @@
 						<ul class="social-icons">
 							<li><a href="https://www.facebook.com/SlasticarnicaAldi/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
 							<li><a href="https://goo.gl/maps/XfiqPkcgy6s" class="social-icon"> <i class="fa fa-map-marker"></i></a></li>
-							<li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+							<li><a href="tel:36763689308" class="social-icon"> <i class="fa fa-phone"></i></a></li>
+							<li><a href="https://www.instagram.com/caffealdi" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
 							</i>
 						</ul>
 					</div>
@@ -864,7 +914,7 @@
 						<ul class="social-icons">
 							<li><a href="https://www.facebook.com/slasticarnaaldi2/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
 							<li><a href="https://goo.gl/maps/f5EVjSmzKo22" class="social-icon"> <i class="fa fa-map-marker"></i></a></li>
-							<li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+							<li><a href="tel:38763639289" class="social-icon"> <i class="fa fa-phone"></i></a></li>
 							</i>
 						</ul>
 					</div>
@@ -892,6 +942,9 @@
 				modalImg.src = element.src;
 				caption.innerText = title;
 				myModal.style.display = "block";
+				body.style.overflow = "hidden";
+				document.body.style.overflowY = "hidden";
+				console.log(document.body.style.overflowY);
 			})
 		});
 
@@ -899,6 +952,8 @@
 		var span = document.getElementsByClassName("close")[0];
 		span.onclick = function () {
 			myModal.style.display = "none";
+			document.body.style.overflowY = "auto";
+			console.log(document.body.style.overflowY);
 		}
 	</script>
 </body>
