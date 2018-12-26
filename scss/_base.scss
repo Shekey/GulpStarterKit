@@ -19,6 +19,24 @@ body {
   &.modal-open {
     overflow-y: hidden;
   }
+
+  .btn {
+    background: #b91f5f;
+    border-color: #b91f5f;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: #ce5487;
+      border-color: #ce5487;
+      box-shadow: none;
+    }
+  }
+
+  .btn-navigate {
+    margin-top: 40px;
+    color:white;
+  }
 }
 
 a {

@@ -5,6 +5,12 @@
   padding: 30px 0 50px;
   overflow-x: hidden;
 
+  &.home {
+    article {
+      display: flex;
+    }
+  }
+
   .accordion-menu {
     display: none;
 
@@ -24,16 +30,13 @@
     }
   }
 
-
   article {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     flex-basis: 100%;
 
-    display: none;
-
     .card {
-      padding: 0 10px;
+      padding: 5 5px;
       flex-basis: 33.33%;
       max-width: 33.33%;
       border: none;
@@ -107,7 +110,7 @@
           }
 
           .desc {
-            width: 100%;
+            width: calc(100% - 30px);
             margin-left: 30px;
             text-align: left;
           }

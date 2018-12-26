@@ -3,6 +3,29 @@ main {
 	margin: 80px auto 0 auto;
 }
 
+.back-to-top {
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display:none;
+	z-index: 100;
+	
+	.chevron {
+		width: 23px;
+		height: 26px;
+		background: url("../assets/chevron-up.svg");
+		background-size: contain;
+		background-repeat: no-repeat;		
+
+		@media only screen and (min-width : 320px) and (max-width : 768px){
+			width: 16px;
+			height: 19px;
+		}	
+	}
+}
+
+
 // .main {
 // 	font-family: Arial;
 // 	width: 100%;
