@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Menu Aldi</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?ver=8">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
   </a>
   <div class="container">
     <div class="page-header">
-      <h1 class="text-center"> - Caffe Slastičarna Aldi - </h1>
+      <a href="/"><h1 class="text-center"> - Caffe Slastičarna Aldi - </h1></a>
     </div>
   </div>
   <header>
@@ -44,11 +44,13 @@
         <div class="col-md-12 mx-auto">
           <h2 class="headline-menu">Menu</h2>
         </div>
-
-
+        
+        <input type="checkbox" id="pica" class="accordion-menu">
+        <label class="category-tag" for="pica">Bezalkoholna pića</label>
+        <article class="no-image justify-content-center">
         <input type="checkbox" id="topli-napitci" class="accordion-menu">
         <label class="category-tag" for="topli-napitci">Topli napitci</label>
-        <article class="no-image justify-content-center">
+          <article class="no-image justify-content-center">
           <div class="card">
             <img class="card-img-top" src="../assets/topli.jpg" alt="Card image cap">
           </div>
@@ -155,7 +157,7 @@
         <label class="category-tag" for="vode">Voda</label>
         <article class="no-image justify-content-center">
           <div class="card">
-            <img class="card-img-top" src="../assets/vode.jpg" alt="Card image cap">
+            <img class="card-img-top" src="../assets/flasa.jpg" alt="Card image cap">
           </div>
           <div class="menu-wrap">
             <div class="text text-center mb-2">Vrste vode:</div>
@@ -201,7 +203,7 @@
         <label class="category-tag" for="gazirani">Gazirani sokovi</label>
         <article class="no-image justify-content-center">
           <div class="card">
-            <img class="card-img-top" src="../assets/gazirani_napitci.jpg" alt="Card image cap">
+            <img class="card-img-top" src="../assets/gazirani.jpeg" alt="Card image cap">
           </div>
           <div class="menu-wrap">
             <div class="text text-center mb-2">Vrste sokova:</div>
@@ -375,12 +377,16 @@
             </div>
           </div>
         </article>
+        </article>
 
-        <input type="checkbox" id="cocktails" class="accordion-menu">
+        <input type="checkbox" id="apica" class="accordion-menu">
+        <label class="category-tag" for="apica">Alkoholna pića</label>
+        <article class="no-image justify-content-center">
+             <input type="checkbox" id="cocktails" class="accordion-menu">
         <label class="category-tag" for="cocktails">Cocktails</label>
         <article class="no-image justify-content-center">
           <div class="card">
-            <img class="card-img-top" src="../assets/coctails.jpg" alt="Coctails">
+            <img class="card-img-top" src="../assets/koktel.jpg" alt="Coctails">
           </div>
           <div class="menu-wrap">
             <div class="text text-center mb-2">Vrste cocktails:</div>
@@ -469,7 +475,7 @@
         <label class="category-tag" for="rakije">Rakije</label>
         <article class="no-image justify-content-center">
           <div class="card">
-            <img class="card-img-top" src="../assets/raike.jpg" alt="Coctails">
+            <img class="card-img-top" src="../assets/rakija11.jpg" alt="Coctails">
           </div>
           <div class="menu-wrap">
             <div class="text text-center mb-2">Vrste rakija:</div>
@@ -599,9 +605,9 @@
 
         <input type="checkbox" id="vina" class="accordion-menu">
         <label class="category-tag" for="vina">Vina</label>
-        <article class="no-image justify-content-center">
+            <article class="no-image justify-content-center">
           <div class="card">
-            <img class="card-img-top" src="../assets/vina.jpg" alt="Coctails">
+            <img class="card-img-top" src="../assets/vino.jpg" alt="Coctails">
           </div>
           <div class="menu-wrap">
             <div class="text text-center mb-2">Vrste vina:</div>
@@ -713,10 +719,14 @@
             </div>
           </div>
         </article>
-
-        <input type="checkbox" id="aldi-dorucak" class="accordion-menu">
-        <label class="category-tag" for="aldi-dorucak">Aldi doručak</label>
+        </article>
+        
+        <input type="checkbox" id="slanajela" class="accordion-menu">
+        <label class="category-tag" for="slanajela">Slana jela</label>
         <article class="no-image justify-content-center">
+            <input type="checkbox" id="aldi-dorucak" class="accordion-menu">
+            <label class="category-tag" for="aldi-dorucak">Aldi doručak</label>
+            <article class="no-image justify-content-center">
           <div class="card">
             <img class="card-img-top" src="../assets/novidorucak.jpg" alt="Card image cap">
           </div>
@@ -811,17 +821,27 @@
 
             <div class="menu-item">
               <div class="text"><span class="badge badge-secondary">1</span>Pileća salata</div>
+               <div class="desc">(pohovana piletina, krastavac, zelena salata, kupus, paradajz, tartar sos)</div>
             </div>
 
             <div class="menu-item">
               <div class="text"><span class="badge badge-secondary">2</span>Tuna salata</div>
+               <div class="desc">(tuna, zelena salata, paradajz, kupus, krastavac, kukuruz)</div>
             </div>
 
             <div class="menu-item">
-              <div class="text"><span class="badge badge-secondary">3</span>Fokača (pogača)</div>
+              <div class="text"><span class="badge badge-secondary">3</span>Šopska salata</div>
+               <div class="desc">(travnički sir, paradajz, paprika, krastavci)</div>
             </div>
 
-
+ <div class="menu-item">
+              <div class="text"><span class="badge badge-secondary">4</span>Mješana salata</div>
+               <div class="desc">(zelena salata, paradajz, kupus, krastavac, kukuruz)</div>
+            </div>
+            
+             <div class="menu-item">
+              <div class="text"><span class="badge badge-secondary">5</span>Fokača (pogača)</div>
+            </div>
 
           </div>
         </article>
@@ -866,17 +886,66 @@
 
           <div class="menu-wrap">
             <div class="text text-center mb-2">Vrste sendvića:</div>
+            
+              <div class="menu-item">
+              <div class="text"><span class="badge badge-secondary">1</span>ALDI</div>
+               <div class="desc">(pohovana piletina, goveđi pršut, salata, paradajz, tartar sos)</div>
+            </div>
+            
             <div class="menu-item">
-              <div class="text"><span class="badge badge-secondary">1</span>Mozzarela - Paradajz</div>
+              <div class="text"><span class="badge badge-secondary">2</span>Mozzarela - Paradajz</div>
+               <div class="desc">(mozzarella, paradajz)</div>
             </div>
 
             <div class="menu-item">
-              <div class="text"><span class="badge badge-secondary">2</span>&Scaron;unka - Sir</div>
+              <div class="text"><span class="badge badge-secondary">3</span>&Scaron;unka - Sir</div>
+               <div class="desc">(pileća šunka, sir, salata, majoneza, kečap)</div>
             </div>
 
             <div class="menu-item">
-              <div class="text"><span class="badge badge-secondary">3</span>Pr&scaron;ut - Sir</div>
+              <div class="text"><span class="badge badge-secondary">4</span>Pr&scaron;ut - Sir</div>
+               <div class="desc">(pršut, sir, salata, majoneza, kečap)</div>
             </div>
+            
+              <div class="menu-item">
+              <div class="text"><span class="badge badge-secondary">5</span>Delux</div>
+               <div class="desc">(delux šunka, sir, salata, majoneza, kečap)</div>
+            </div>
+            
+              <div class="menu-item">
+              <div class="text"><span class="badge badge-secondary">6</span>Pizza</div>
+               <div class="desc">(pileća šunka, sir, salata, majoneza, kečap)</div>
+            </div>
+            
+            
+            <div class="menu-item">
+              <div class="text"><span class="badge badge-secondary">7</span>Prosciutto</div>
+               <div class="desc">(goveđi pršut, sir, salata, tartar sos)</div>
+            </div>
+            
+            
+            <div class="menu-item">
+              <div class="text"><span class="badge badge-secondary">8</span>Pepperoni</div>
+               <div class="desc">(kulen, sir, zelena salata, chili sos, kukuruz)</div>
+            </div>
+            
+            
+            <div class="menu-item">
+              <div class="text"><span class="badge badge-secondary">9</span>Vegeteriana</div>
+               <div class="desc">(sir, povrće, tartar sos, začini)</div>
+            </div>
+            
+            <div class="menu-item">
+              <div class="text"><span class="badge badge-secondary">10</span>BBQ</div>
+               <div class="desc">(pohovani batak, sir, salata, tartar sos)</div>
+            </div>
+            
+            <div class="menu-item">
+              <div class="text"><span class="badge badge-secondary">11</span>Tuna</div>
+               <div class="desc">(tunjevina, sir, kukuruz, masline)</div>
+            </div>
+            
+            
           </div>
         </article>
 
@@ -1211,8 +1280,14 @@
 
           </div>
         </article>
-
-        <input type="checkbox" id="palacinke" class="accordion-menu">
+            
+        </article>
+       
+        <input type="checkbox" id="slatkajela" class="accordion-menu">
+        <label class="category-tag" for="slatkajela">Slatka jela</label>
+             <article class="no-image justify-content-center">
+            
+            <input type="checkbox" id="palacinke" class="accordion-menu">
         <label class="category-tag" for="palacinke">Palačinke</label>
         <article class="no-image justify-content-center">
           <div class="card">
@@ -1375,67 +1450,17 @@
         <input type="checkbox" id="kolaci" class="accordion-menu">
         <label class="category-tag" for="kolaci">Kolači i torte</label>
         <article class="kolaci justify-content-center">
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-1.jpg" />
+            
+            <input type="checkbox" id="monoporcije" class="accordion-menu">
+            <label class="category-tag" for="monoporcije">Monoporcije</label>
+            <article class="no-image justify-content-center">
+                
+                <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-1d.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Voćna korpica</h5>
+              <h5 class="card-title">Nutella</h5>
             </div>
           </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-1a.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Panna cotta</h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-1b.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Bijela panna cota</h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-1c.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Nuttela torta</h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-1d.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Nutella monoporcija</h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-1aa.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Panna cotte</h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-1ab.jpg" />
-            <div class="card-body">
-              <h5 class="card-title"> </h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-1ac.jpg" />
-            <div class="card-body">
-              <h5 class="card-title"> </h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-1ad.jpg" />
-            <div class="card-body">
-              <h5 class="card-title"> </h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-2.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Jagoda kolač</h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-2a.jpg" />
+                 <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-2a.jpg" />
             <div class="card-body">
               <h5 class="card-title">Mus malina</h5>
             </div>
@@ -1459,32 +1484,6 @@
             </div>
           </div>
 
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-2aa.jpg" />
-            <div class="card-body">
-              <h5 class="card-title"> </h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-2ab.jpg" />
-            <div class="card-body">
-              <h5 class="card-title"> </h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-2ac.jpg" />
-            <div class="card-body">
-              <h5 class="card-title"> </h5>
-            </div>
-          </div>
-
-
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-3.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Višnja kocka</h5>
-            </div>
-          </div>
-
           <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-3a.jpg" />
             <div class="card-body">
               <h5 class="card-title">Ruža</h5>
@@ -1496,43 +1495,54 @@
               <h5 class="card-title">Minjon lješnjak</h5>
             </div>
           </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-3d.jpg" />
+          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-5b.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Milka kocka</h5>
+              <h5 class="card-title">Kokos</h5>
             </div>
           </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-3aa.jpg" />
+          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-7.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Bezglutenska torta</h5>
+              <h5 class="card-title">Srce</h5>
             </div>
           </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-3ab.jpg" />
+          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-9ab.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Bijela nuttela</h5>
+              <h5 class="card-title">Bananica</h5>
             </div>
           </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-3ac.jpg" />
+                
+            </article>
+            
+            <input type="checkbox" id="voćni" class="accordion-menu">
+            <label class="category-tag" for="voćni">Voćni</label>
+            <article class="no-image justify-content-center">
+                
+          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-1.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Besame mucho</h5>
+              <h5 class="card-title">Voćna korpica</h5>
             </div>
           </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-3ad.jpg" />
+          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-1a.jpg" />
             <div class="card-body">
-              <h5 class="card-title"> </h5>
+              <h5 class="card-title">Panna cotta</h5>
             </div>
           </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-4.jpg" />
+          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-1b.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Tiramisu</h5>
+              <h5 class="card-title">Bijela panna cota</h5>
             </div>
           </div>
-
+          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-2.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Jagoda kolač</h5>
+            </div>
+          </div>
+          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-3.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Višnja kocka</h5>
+            </div>
+          </div>
+          
           <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-4a.jpg" />
             <div class="card-body">
               <h5 class="card-title">Marelica torta</h5>
@@ -1550,76 +1560,20 @@
               <h5 class="card-title">Ledeni vjetar</h5>
             </div>
           </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-4d.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Krostata</h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-4aa.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Imotska</h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-4ab.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Krostata</h5>
-            </div>
-          </div>
-
+          
           <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-4ac.jpg" />
             <div class="card-body">
               <h5 class="card-title">Jagoda brownie</h5>
             </div>
           </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-4ad.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Crispy</h5>
-            </div>
-          </div>
-
           <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-5.jpg" />
             <div class="card-body">
               <h5 class="card-title">Voćna kocka</h5>
             </div>
           </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-5a.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Krempita</h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-5b.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Kokos</h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-5c.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Kinder kocka</h5>
-            </div>
-          </div>
-
           <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-5d.jpg" />
             <div class="card-body">
               <h5 class="card-title">Jogobela</h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-5aa.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Kraljica čokolade</h5>
-            </div>
-          </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-5ab.jpg" />
-            <div class="card-body">
-              <h5 class="card-title"> </h5>
             </div>
           </div>
 
@@ -1628,26 +1582,43 @@
               <h5 class="card-title">Jagoda brownie</h5>
             </div>
           </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-6d.jpg" />
+            <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-8ad.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Imotska torta</h5>
+              <h5 class="card-title">Cheesecake voćni</h5>
             </div>
           </div>
-
-
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-6ab.jpg" />
+          
+         <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-4d.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Hurmašica</h5>
+              <h5 class="card-title">Krostata</h5>
             </div>
           </div>
-
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-6ac.jpg" />
+            </article>
+            
+             <input type="checkbox" id="cokoladni" class="accordion-menu">
+            <label class="category-tag" for="cokoladni">Čokoladni</label>
+            <article class="no-image justify-content-center">
+                  <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-3ab.jpg" />
             <div class="card-body">
-              <h5 class="card-title"> </h5>
+              <h5 class="card-title">Bijela nuttela</h5>
             </div>
           </div>
+          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-1c.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Nuttela torta</h5>
+            </div>
+          </div>
+          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-3ac.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Besame mucho</h5>
+            </div>
+          </div>
+          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-3d.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Milka kocka</h5>
+            </div>
+          </div>
+                
 
           <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-6ad.jpg" />
             <div class="card-body">
@@ -1655,11 +1626,7 @@
             </div>
           </div>
 
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-7.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Srce</h5>
-            </div>
-          </div>
+         
 
           <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-7ac.jpg" />
             <div class="card-body">
@@ -1674,29 +1641,15 @@
             </div>
           </div>
 
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-8c.jpg" />
-            <div class="card-body">
-              <h5 class="card-title"> </h5>
-            </div>
-          </div>
-
           <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-8aa.jpg" />
             <div class="card-body">
               <h5 class="card-title">Čoko naranča kocka</h5>
             </div>
           </div>
 
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-8ab.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Cheesecake</h5>
-            </div>
-          </div>
+          
 
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-8ad.jpg" />
-            <div class="card-body">
-              <h5 class="card-title">Cheesecake voćni</h5>
-            </div>
-          </div>
+         
 
           <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-9.jpg" />
             <div class="card-body">
@@ -1704,57 +1657,117 @@
             </div>
           </div>
 
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-9b.jpg" />
+
+          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-4.jpg" />
             <div class="card-body">
-              <h5 class="card-title"> </h5>
+              <h5 class="card-title">Tiramisu</h5>
             </div>
           </div>
 
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-9ab.jpg" />
+
+          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-4ad.jpg" />
             <div class="card-body">
-              <h5 class="card-title">Bananica</h5>
+              <h5 class="card-title">Crispy</h5>
             </div>
           </div>
 
-          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-9ac.jpg" />
+
+        
+
+
+          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-5c.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Kinder kocka</h5>
+            </div>
+          </div>
+
+
+          <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-5aa.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Kraljica čokolade</h5>
+            </div>
+          </div>
+
+
+            </article>
+          
+           <input type="checkbox" id="ostali" class="accordion-menu">
+            <label class="category-tag" for="ostali">Ostali</label>
+            <article class="no-image justify-content-center">
+                
+            <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-6d.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Imotska torta</h5>
+            </div>
+          </div>
+            <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-3aa.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Bezglutenska torta</h5>
+            </div>
+          </div>
+          
+            <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-6ab.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Hurmašica</h5>
+            </div>
+          </div>
+
+            <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-9ac.jpg" />
             <div class="card-body">
               <h5 class="card-title">Baklava</h5>
             </div>
           </div>
+            <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-8ab.jpg" />
+                <div class="card-body">
+                  <h5 class="card-title">Cheesecake</h5>
+                </div>
+          </div>
+            <div class="card"><img alt="Card image cap" class="card-img-top" src="../assets/kolaci/kolac-5a.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Krempita</h5>
+            </div>
+          </div>
+          
+          
+            </article>
+    
+        </article>
+            
         </article>
       </div>
     </div>
   </section>
-  <footer>
-    <div class="container">
-      <div class="footer-social-icons">
-        <div class="row justify-content-center">
-          <div class="col-md-4 col-sm-12">
-            <h4 class="_14 text-center">Aldi Group #1</h4>
-            <ul class="social-icons">
-              <li><a href="https://www.facebook.com/SlasticarnicaAldi/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://goo.gl/maps/XfiqPkcgy6s" class="social-icon"> <i class="fa fa-map-marker"></i></a></li>
-              <li><a href="tel:36763689308" class="social-icon"> <i class="fa fa-phone"></i></a></li>
-              <li><a href="https://www.instagram.com/caffealdi" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
-              </i>
-            </ul>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <h4 class="_14 text-center">Aldi Group #2</h4>
-            <ul class="social-icons">
-              <li><a href="https://www.facebook.com/slasticarnaaldi2/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://goo.gl/maps/f5EVjSmzKo22" class="social-icon"> <i class="fa fa-map-marker"></i></a></li>
-              <li><a href="tel:38763639289" class="social-icon"> <i class="fa fa-phone"></i></a></li>
-              </i>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="text-details text-center">
-        <p class="copyright">© Caffe Slasticarna Aldi 2018</p>
-      </div>
-    </div>
-  </footer>
+<footer>
+<div class="container">
+<div class="footer-social-icons">
+             	<div class="row justify-content-center">
+					<div class="col-md-4 col-sm-12">
+						<h4 class="_14 text-center">Caffe slastičarna Aldi</h4>
+						<ul class="social-icons">
+							<li><a href="https://www.facebook.com/SlasticarnicaAldi/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://goo.gl/maps/XfiqPkcgy6s" class="social-icon"> <i class="fa fa-map-marker"></i></a></li>
+							<li><a href="tel:36763689308" class="social-icon"> <i class="fa fa-phone"></i></a></li>
+							<li><a href="https://www.instagram.com/caffealdi" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+							</i>
+						</ul>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<h4 class="_14 text-center">Caffe slastičarna Aldi2</h4>
+						<ul class="social-icons">
+							<li><a href="https://www.facebook.com/slasticarnaaldi2/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://goo.gl/maps/f5EVjSmzKo22" class="social-icon"> <i class="fa fa-map-marker"></i></a></li>
+							<li><a href="tel:38763639289" class="social-icon"> <i class="fa fa-phone"></i></a></li>
+							</i>
+						</ul>
+					</div>
+				</div>
+</div>
+
+<div class="text-details text-center">
+<p class="copyright">&copy; Caffe Slasticarna Aldi 2018</p>
+</div>
+</div>
+</footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
